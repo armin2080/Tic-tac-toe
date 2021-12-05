@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="js.js"></script>
+    <title>Document</title>
+</head>
+    <body>
+        <div class="input-name" id="input-name">
+            <input type="text" id="name1" placeholder="Enter first player's name ">
+        
+            <input type="text" id="name2" placeholder="Enter second player's name "><br>
+            <button class="button" onclick="getName()">Submit</button>
+            <button class="button" onclick="location.reload()" style="width: 20%;">Reset Game</button>
+        </div>
+
+    <span class="value" id="value"></span>
+    <div class="game-board" id="game-board" style="display: none;" >
+        <button id="button1" class="box" onclick="attach('button1',1)"></button>
+        <button id="button2" class="box" onclick="attach('button2',2)"></button>
+        <button id="button3" class="box" onclick="attach('button3',3)"></button>
+        <button id="button4" class="box" onclick="attach('button4',4)"></button>
+        <button id="button5" class="box" onclick="attach('button5',5)"></button>
+        <button id="button6" class="box" onclick="attach('button6',6)"></button>
+        <button id="button7" class="box" onclick="attach('button7',7)"></button>
+        <button id="button8" class="box" onclick="attach('button8',8)"></button>
+        <button id="button9" class="box" onclick="attach('button9',9)"></button>
+      </div>
+    <div style="margin-top: 2%; display: none;" id="stats">
+    </div>
+</body>
+</html>

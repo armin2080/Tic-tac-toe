@@ -1,0 +1,100 @@
+body{
+  background-image: url('https://b2n.ir/k34698');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  text-align: center;
+}
+
+
+.input-name :hover {
+  background-color: darkblue;
+  color: white;
+}
+
+.input-name {
+    background-color: darkblue;
+    border: cyan double 5px;
+    width: 70%;
+    line-height: 1000%;
+    border-radius: 30%;  
+}
+input {
+  width: 70%;
+  font-size: 250%;
+}
+
+
+.game-board
+{  
+	width: 40%;
+	height: 550px;
+	margin: 0 auto;
+  background-color: #34495e;
+  color: #fff;
+  
+  border-radius: 10px;
+	
+	display: grid;
+	grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+}
+
+
+.box
+{
+    
+  border: 6px solid blue;
+  border-radius: 2px;
+  font-family: Helvetica;
+  font-weight: bold;
+  font-size: 4em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  position: relative;
+  background-color: cyan;
+  border: none;
+  font-size: 28px;
+  color: white;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+  border: double blue 5px;
+}
+
+.button:after {
+  content: "";
+  background: #f1f1f1;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+
+.value {
+  display: none;
+  font-size: 550%;
+  position: absolute;
+  color: white;
+  width: 50%;
+  border: cyan double 15px;
+  margin-left: 23%;
+  margin-top: 15%; 
+}
